@@ -1,13 +1,15 @@
-# Added httpd server to:
+# Added shellinabox to:
 # CentOS-7 with supervisord launcher and SSH server | Docker
 
-This is a CentOS-7 Docker with supervisor, SSH server and httpd server. 
+This is a CentOS-7 Docker with supervisor, SSH server and shellinabox. 
 
 It is inspired by [million12/centos-supervisor](https://registry.hub.docker.com/u/million12/centos-supervisor/). This image is perfect in case when you need to launch more then one process inside a container and want access via SSH. This image is based on official [centos:centos7](https://registry.hub.docker.com/_/centos/).
 
 ## Docker run example:
 
-#### docker run -p 2222:22 -p 9001:9001 -p 8000:80 -d -v ~/public_html:/data/www/html orboan/docker-centos-supervisor-ssh-httpd 
+#### docker run -p 2222:22 -p 9001:9001 -p 9100:4200 -d -v ~/data:/data orboan/dcss-shellinabox
+
+9100 mapped port in mandatory if you want shellinabox added to the supervisor web page.
 
 ## SSH default login 
 #### Credentials using username and password:

@@ -3,7 +3,7 @@ MAINTAINER Oriol Boix Anfosso <dev@orboan.com>
 
 RUN \
   yum update -y && \
-  yum install httpd -y
+  yum install -y openssl shellinabox
 
 # - Clean YUM caches to minimise Docker image size...
 RUN \
@@ -11,4 +11,4 @@ RUN \
 
 ADD container-files /
 
-EXPOSE 80
+EXPOSE 4200
