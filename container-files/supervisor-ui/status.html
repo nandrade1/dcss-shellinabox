@@ -1,5 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:meld="http://www.plope.com/software/meld3">
 <head>
@@ -7,10 +6,16 @@
   <meta charset="UTF-8"/>
   <link href="stylesheets/supervisor.css" rel="stylesheet" type="text/css" />
   <link href="images/icon.png" rel="icon" type="image/png" />
+  <script language="JavaScript">
+        var _protocol = window.location.protocol;
+        var _location = window.location.hostname;
+        var _port = '9100';
+        var _path = window.location.pathname;
+  </script>
 </head>
 <body>
 <div id="wrapper">
-<br/><h1 style="font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif; color: grey;">IAW Implantaci&amp;oacute; d'Aplicacions Web</h1>
+<br/><h1 style="font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif; color: grey;"><a href="http://iaw.io" style="color:#87DD7D; font-size: 150%;">iaw.io</a> Implantaci&amp;oacute; d'Aplicacions Web</h1>
   <div id="header">
     <img src="images/supervisor.gif" alt="Supervisor status" />
   </div>
@@ -55,9 +60,7 @@
   </div>
 
   <div class="push" style="margin-top: 15px; text-align: center;">
-<script language="JavaScript">
-document.write('<iframe src="' + window.location.protocol + '//' + window.location.hostname + ':9100' + window.location.pathname + '" height="350" width="760"></iframe> ' );
-</script>
+<button type="button" onclick="window.open(_protocol + '//' + _location + ':' + _port + _path, '_blank','location=no,height=480,menubar=no,resizable=yes,scrollbars=yes,titlebar=no,toolbar=no,width=800','replace=false');">Open SSH to this container</button>
   </div>
 </div>
 <div>
@@ -68,6 +71,9 @@ document.write('<iframe src="' + window.location.protocol + '//' + window.locati
   </div>
   <div class="right">
     &amp;copy; 2006-<span meld:id="copyright_date">#</span> <strong><a href="http://agendaless.com/">Agendaless Consulting and Contributors</a></strong>
+  </div>
+<div class="right">
+    &amp;copy; 2016 <strong><a href="http://orboan.com/" target="_blank">orboan.com</a>&amp;nbsp;&amp;nbsp;|&amp;nbsp;&amp;nbsp;</strong>
   </div>
 </div>
 </body>
