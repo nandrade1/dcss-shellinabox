@@ -9,6 +9,10 @@ RUN \
 RUN \
   yum clean all && rm -rf /tmp/yum*
 
+# This is the host port to map to the shellinabox exposed port (4200)
+# You can override this default value with the -e option in 'docker run'
+# Please choose the value for this env variable acordingly to the 
+# mapped port with the option -p in 'docker run'
 ENV BOXINASHELL_PORT=9100
 
 ADD container-files /
