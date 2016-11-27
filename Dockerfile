@@ -9,6 +9,8 @@ RUN \
 RUN \
   yum clean all && rm -rf /tmp/yum*
 
+ENV BOXINASHELL_PORT=9100
+
 ADD container-files /
 
 EXPOSE 4200
