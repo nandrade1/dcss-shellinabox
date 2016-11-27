@@ -13,7 +13,7 @@ RUN \
 # You can override this default value with the -e option in 'docker run'
 # Please choose the value for this env variable acordingly to the 
 # mapped port with the option -p in 'docker run'
-ENV BOXINASHELL_PORT=9100
+ENV SHELLINABOX_PORT=9100
 
 ADD container-files /
 
