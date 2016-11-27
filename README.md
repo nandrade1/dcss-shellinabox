@@ -7,9 +7,9 @@ It is inspired by [million12/centos-supervisor](https://registry.hub.docker.com/
 
 ## Docker run example:
 
-#### docker run -p 2222:22 -p 9001:9001 -p 9100:4200 -d -v ~/data:/data orboan/dcss-shellinabox
+#### docker run -e BOXINASHELL_PORT=9103 -p 9103:4200 -p 9001:9001 -d -v ~/data:/data orboan/dcss-shellinabox
 
-9100 mapped port in mandatory if you want shellinabox added to the supervisor web page.
+Default shellinabox host mapped port is 9100, but if you want to use another, you must use the environment variable BOXINASHELL_PORT to make shellinabox added to the supervisor web page.
 
 ## SSH default login 
 #### Credentials using username and password:
