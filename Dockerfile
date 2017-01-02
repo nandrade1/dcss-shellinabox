@@ -13,6 +13,8 @@ RUN \
 # Please choose the value for this env variable acordingly to the 
 # mapped port with the option -p in 'docker run'
 ENV SHELLINABOX_PORT=9100
+ENV USER=www
+ENV PASSWORD=iaw
 
 ADD container-files /
 
